@@ -107,6 +107,12 @@
             bindings = <&kp SEMICOLON>;
             key-positions = <25 26>;
         };
+
+        // Space+Tab を同時に押している間は SYS（LiNEA40はノブを押し込めないため）
+        sys_layer_combo {
+            bindings = <&mo 6>;
+            key-positions = <34 35>;
+        };
     };
 
     // Space長押し(NUM) と Enter長押し(FUNCTION) を同時に押している間は ARROW
@@ -171,10 +177,10 @@
 &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &lt 5 I  &kp O  &kp P
 &kp A  &mt LEFT_WIN S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G  &kp H  &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt LWIN L  &kp SQT
 &mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&gresc  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &mt LEFT_CONTROL TAB  &kp BACKSPACE  &lt 1 ENTER  &kp MINUS  &kp SEMICOLON  &td_ime
+&gresc  &kp LEFT_WIN  &kp LEFT_ALT  &none  &lt 2 SPACE  &mt LEFT_CONTROL TAB  &kp BACKSPACE  &lt 1 ENTER  &kp MINUS  &kp SEMICOLON  &td_ime
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         function_layer {
