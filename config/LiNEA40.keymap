@@ -191,6 +191,8 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS  &kp F6  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp F11
 &kp DELETE  &kp N0  &trans  &kp PERIOD  &lt 2 EQUAL  &trans  &trans  &trans  &trans  &trans  &kp F12
             >;
+
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         num_layer {
@@ -233,6 +235,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         sys_layer {
